@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pushpak.nestedlayout.MainActivity"
+    android:background="@drawable/batman">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:weightSum="1"
+        android:background="#ffff"
+
+            >
+
+
+       <ImageView
+           android:id="@+id/imagedata"
+           android:layout_width="0dp"
+           android:layout_weight="0.3"
+           android:layout_centerInParent="true"
+           android:layout_height="50dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginLeft="10dp"
+           android:src="@drawable/brightnes"
+           />
+
+    <EditText
+        android:id="@+id/edName"
+        android:text="Display"
+        android:fontFamily="serif"
+        android:textSize="25dp"
+        android:paddingBottom="70dp"
+        android:layout_width="0dp"
+         android:layout_weight="0.7"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="30dp"
+        android:layout_centerInParent="true"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
